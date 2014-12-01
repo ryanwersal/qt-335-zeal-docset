@@ -1,4 +1,4 @@
-# Qt 3.3.5 Docset for Zeal/Dash
+# Qt 3.3.5 Docset for [Zeal](https://github.com/jkozera/zeal)/[Dash](http://kapeli.com/dash)
 
 Very primitive docset for Qt 3.3.5. It is good enough for use but far from ideal.
 

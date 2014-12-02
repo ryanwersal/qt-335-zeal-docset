@@ -35,7 +35,7 @@ for class_name, path, url in class_info:
 	soup = BeautifulSoup(page)
 	fn_info = [(a.text.strip(), a.attrs["href"].strip()) for a in soup.select("li.fn a") if a.text.strip()]
 	for fn_name, fn_url in fn_info:
-		entry_name = "%s (%s)" % (fn_name, class_name)
+		entry_name = "%s::%s" % (class_name, fn_name)
 		entry_url = url + fn_url
 		cur.execute("INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES (?, ?, ?);", (entry_name, "Method", entry_url))
 
